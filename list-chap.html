@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .list-chap {
+        padding-top: 10rem;
+        font-size: 2rem;
+      }
+      .boxed {
+        padding: 2rem;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 2rem;
+      }
+      .info img {
+        height: 40rem;
+        object-fit: cover;
+        display: block;
+        margin: 2rem auto;
+      }
+      h2 {
+        margin-bottom: 2rem;
+        color: var(--red);
+        font-size: 4rem;
+      }
+      .info p {
+        margin-bottom: 1.5rem;
+      }
+      .info i {
+        color: gold;
+        font-size: 1.7rem;
+      }
+      .category {
+        padding: 1.5rem 0;
+      }
+      .category a {
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        border: 0.3rem solid var(--red);
+        color: var(--red);
+        margin-right: 1rem;
+      }
+
+      .chap .link-chap {
+        display: flex;
+        flex-direction: column;
+      }
+      .chap .link-chap a {
+        padding: 1.5rem;
+        border-bottom: 0.2rem solid #e6e3e3;
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+      }
+
+      .chap .link-chap .content {
+        width: 60%;
+      }
+
+      .suggest p {
+        color: var(--red);
+        font-size: 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <a href="#" class="logo"
+        ><i class="fas fa-dragon"></i>Manh<span>wa</span></a
+      >
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="index.html">trang chủ</a>
+        <a href="#popular">phổ biến</a>
+        <a href="#gallery">thư viện</a>
+        <a href="#review">đánh giá</a>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <section class="list-chap">
+      <div class="boxed info">
+        <img src="./images/BoardingDiary/pic7.jpg" alt="" />
+        <h2>Boarding Diary</h2>
+        <p>Tác giả: Đang cập nhật</p>
+        <p>Tình trạng: Đang cập nhật</p>
+        <p>Số chương: Đang cập nhật</p>
+        <p>Lượt xem: 9999+</p>
+        <p>
+          Đánh giá: <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <div class="category">
+          <a href="#">School Life</a> <a href="#">Romance</a>
+        </div>
+      </div>
+      <div class="boxed chap">
+        <h2>Danh sách</h2>
+        <div class="link-chap">
+          <a href="#"
+            ><span class="content">lần đầu</span
+            ><span class="note">Chap 12-14</span></a
+          >
+          <a href="#"
+            ><span class="content">quán cắt tóc</span
+            ><span class="note">Chap 17-21</span></a
+          >
+          <a href="#"
+            ><span class="content">trong bếp</span
+            ><span class="note">Chap 37-39</span></a
+          >
+          <a href="#"
+            ><span class="content">phòng khách + buộc tay</span
+            ><span class="note">Chap 43-44</span></a
+          >
+          <a href="#"
+            ><span class="content">trong phòng ngủ của main</span
+            ><span class="note">Chap 69-71</span></a
+          ><a href="#"
+            ><span class="content">kem chống nắng</span
+            ><span class="note">Chap 73-74</span></a
+          ><a href="#"
+            ><span class="content">Ngoài bãi biển</span
+            ><span class="note">Chap 81-82</span></a
+          ><a href="#"
+            ><span class="content">Lãng mạn ở bể bơi</span
+            ><span class="note">Chap 89-92</span></a
+          >
+        </div>
+      </div>
+      <div class="boxed suggest">
+        <p><i class="fas fa-bookmark"></i> Có thể bạn quan tâm</p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="btn"
+          ><i class="fab fa-twitter-square"></i> twitter</a
+        >
+        <a href="#" class="btn"
+          ><i class="fab fa-instagram-square"></i> instagram</a
+        >
+        <a href="#" class="btn"
+          ><i class="fab fa-pinterest-square"></i> pinterest</a
+        >
+      </div>
+
+      <h1 class="credit">
+        created by <span> CTA </span> | all rights reserved!
+      </h1>
+    </section>
+
+    <!-- scroll top button  -->
+    <a
+      href="#"
+      class="fas fa-angle-up"
+      id="scroll-top"
+      style="border: 0.5rem solid #fff"
+    ></a>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+  </body>
+</html>
