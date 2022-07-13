@@ -27,7 +27,10 @@
       <nav class="navbar">
         <a href="#">trang chủ</a>
         <a href="#popular">phổ biến</a>
-        <a href="#gallery">thư viện</a>
+        <a href="#">mới cập nhật</a>
+        <a href="#">Manhwa</a>
+        <a href="#">Manga</a>
+        <a href="#gallery">theo dõi</a>
         <a href="#review">đánh giá</a>
       </nav>
     </header>
@@ -68,36 +71,52 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <a href="truyen.html" class="btn">đọc ngay</a>
+          <a href="list-chap.html" class="btn">đọc ngay</a>
         </div>
       </div>
     </section>
 
     <!-- popular section ends -->
 
-    <!-- steps section starts  -->
+    <section class="popular" id="popular">
+      <h1 class="heading">Truyện <span>đề cử</span></h1>
 
-    <div class="step-container">
-      <h1 class="heading">Ưu <span>điểm</span></h1>
-
-      <section class="steps">
-        <div class="box">
-          <img src="images/update.jpg" alt="" />
-          <h3>Cập nhật thường xuyên</h3>
+      <div class="box-container">
+        <div class="box box2">
+          <span class="status"> New</span>
+          <span class="add-list"><i class="far fa-heart"></i></span>
+          <img src="images/BoardingDiary/noryang.jpg" alt="" />
+          <h3>Noryangjin</h3>
+          <a class="btn desc">đọc ngay</a>
         </div>
-        <div class="box">
-          <img src="images/free.jpg" alt="" />
-          <h3>Tất cả đều miễn phí</h3>
+        <div class="box box2">
+          <span class="status"> New</span>
+          <span class="add-list"><i class="far fa-heart"></i></span>
+          <img src="images/BoardingDiary/mother.jpg" alt="" />
+          <h3>Mother hunting</h3>
+          <a class="btn desc">đọc ngay</a>
         </div>
-      </section>
-    </div>
-
-    <!-- steps section ends -->
+        <div class="box box2">
+          <span class="status"> New</span>
+          <span class="add-list"><i class="far fa-heart"></i></span>
+          <img src="images/BoardingDiary/bccn.jpg" alt="" />
+          <h3>Landlady Noona</h3>
+          <a class="btn desc">đọc ngay</a>
+        </div>
+        <div class="box box2">
+          <span class="status"> New</span>
+          <span class="add-list"><i class="far fa-heart"></i></span>
+          <img src="images/BoardingDiary/noona.jpg" alt="" />
+          <h3>her taste</h3>
+          <a class="btn desc">đọc ngay</a>
+        </div>
+      </div>
+    </section>
 
     <!-- gallery section starts  -->
 
     <section class="gallery" id="gallery">
-      <h1 class="heading">Thư<span> viện</span></h1>
+      <h1 class="heading">Theo<span> dõi</span></h1>
 
       <div class="box-container">
         <div class="box">
@@ -109,11 +128,27 @@
               Junwoo. Bước vào đời sống ở trọ, anh chàng này may mắn gặp ngay
               chị chủ nhà xinh đẹp tên Cho Mikyung ...
             </p>
-            <a href="truyen.html" class="btn">đọc ngay</a>
+            <a href="list-chap.html" class="btn">đọc ngay</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/BoardingDiary/secretclass.jpg" alt="" />
+          <div class="content">
+            <h3>secret class</h3>
+            <p></p>
+            <a class="btn desc">đọc ngay</a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="pop-outer" style="display: none">
+      <div class="pop-inner">
+        <button class="close">X</button>
+        <p>Truyện sẽ sớm được cập nhật</p>
+        <img src="./images/updating.gif" alt="" />
+      </div>
+    </div>
 
     <!-- gallery section ends -->
 
@@ -167,9 +202,7 @@
         >
       </div>
 
-      <h1 class="credit">
-        created by <span> CTA </span> | all rights reserved!
-      </h1>
+      <h1 class="credit">&copy; | all rights reserved!</h1>
     </section>
 
     <!-- scroll top button  -->
@@ -177,5 +210,17 @@
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $().ready(function () {
+        $(".desc").click(function () {
+          $(".pop-outer").fadeIn("slow");
+        });
+        $(".close").click(function () {
+          $(".pop-outer").fadeOut("slow");
+        });
+      });
+    </script>
   </body>
 </html>

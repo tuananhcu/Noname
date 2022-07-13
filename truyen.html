@@ -11,8 +11,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <style>
-      .read {
-        padding-top: 12rem;
+      .custom-select {
+        padding-top: 15rem;
       }
       .read label {
         font-size: 3rem;
@@ -20,20 +20,78 @@
       .box {
         display: none;
       }
-      .custom-select {
-        /* width: 100%; */
-        position: relative;
-      }
 
       select {
-        /* position: absolute; */
+        border-radius: 1rem;
         background: var(--red);
-        width: 100%;
+        left: 2rem;
+        right: 2rem;
+        top: 10rem;
         font-size: 2rem;
         padding: 2rem;
+        color: #fff;
+        position: fixed;
       }
-      option {
-        position: absolute;
+
+      .title {
+        background: #fff;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .box .title:first-child {
+        border-bottom: 0.2rem solid var(--red);
+        border-radius: 1rem 1rem 0 0;
+      }
+      .box .title:last-child {
+        border-top: 0.2rem solid var(--red);
+        border-radius: 0 0 1rem 1rem;
+      }
+      .box .title p {
+        font-size: 3rem;
+        color: var(--red);
+      }
+
+      .fixed {
+        background: rgba(255, 56, 56, 0.2);
+      }
+
+      #map-link-bar {
+        margin-bottom: 1.5rem;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 1rem;
+      }
+
+      #map-link-bar ul {
+        overflow: hidden;
+        list-style: none;
+      }
+
+      #map-link-bar ul li {
+        float: left;
+        font-size: 2rem;
+      }
+
+      #map-link-bar ul li:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f105";
+        display: inline-block;
+        padding: 0 1rem;
+        vertical-align: middle;
+        font-weight: 900;
+        color: var(--red);
+      }
+
+      #map-link-bar ul li:last-child:after {
+        display: none;
+      }
+
+      #map-link-bar ul li a {
+        color: var(--red);
+        text-decoration: none;
+        font-size: 2rem;
       }
     </style>
   </head>
@@ -46,79 +104,163 @@
       <div id="menu-bar" class="fas fa-bars"></div>
       <nav class="navbar">
         <a href="index.html">trang chủ</a>
-        <a href="#popular">phổ biến</a>
-        <a href="#gallery">thư viện</a>
-        <a href="#review">đánh giá</a>
+        <a href="#">phổ biến</a>
+        <a href="#">mới cập nhật</a>
+        <a href="#">Manhwa</a>
+        <a href="#">Manga</a>
+        <a href="#">theo dõi</a>
+        <a href="#">đánh giá</a>
       </nav>
     </header>
 
     <!-- header section ends -->
-    <section class="read" id="read">
-      <div class="custom-select">
-        <select>
-          <option value="" selected>Chọn</option>
-          <option value="scene1">lần đầu</option>
-          <option value="scene2">quán cắt tóc</option>
-          <option value="scene3">trong bếp</option>
-          <option value="scene4">phòng khách & buộc tay</option>
-          <option value="scene5">trong phòng ngủ của main</option>
-          <option value="scene6">thoa kem chống nắng</option>
-          <option value="scene7">ngoài bờ biển</option>
-          <option value="scene8">Lãng mạn ở bể bơi</option>
-        </select>
-      </div>
 
+    <section class="custom-select">
+      <select>
+        <option value="" selected>Chọn</option>
+        <option value="scene1">lần đầu</option>
+        <option value="scene2">quán cắt tóc</option>
+        <option value="scene3">trong bếp</option>
+        <option value="scene4">phòng khách & buộc tay</option>
+        <option value="scene5">trong phòng ngủ của main</option>
+        <option value="scene6">thoa kem chống nắng</option>
+        <option value="scene7">ngoài bờ biển</option>
+        <option value="scene8">Lãng mạn ở bể bơi</option>
+      </select>
+    </section>
+
+    <section class="read" id="read">
       <div class="box scene1">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">lần đầu</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 12-14</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene2">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">quán cắt tóc</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 17-21</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene3">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">trong bếp</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 37-39</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene4">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">phòng khách & buộc tay</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 43-44</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene5">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">trong phòng ngủ của main</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 69-71</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene6">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">thoa kem chống nắng</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 73-74</p></div>
         <div style="display: flex; flex-direction: column">
           <img src="./images/BoardingDiary/bd1.jpg" alt="manhwa" />
           <img src="./images/BoardingDiary/bd2.jpg" alt="manhwa" />
@@ -136,39 +278,128 @@
           <img src="./images/BoardingDiary/14.jpg" alt="manhwa" />
           <img src="./images/BoardingDiary/15.jpg" alt="manhwa" />
           <img src="./images/BoardingDiary/16.jpg" alt="manhwa" />
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="box scene8">
-        <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
       <div class="box scene7">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#">Ngoài bờ biển</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 81-82</p></div>
         <div style="display: flex; flex-direction: column">
-          <div
-            style="background: var(--red); padding: 2rem; text-align: center"
-          >
-            <p style="font-size: 3rem; color: #fff">end</p>
+          <div class="title">
+            <p>end</p>
           </div>
         </div>
       </div>
 
-      <div class="box scene2"></div>
-      <div class="box scene3"></div>
+      <div class="box scene8">
+        <div id="map-link-bar">
+          <ul>
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="list-chap.html">Danh sách nhân vật</a>
+            </li>
+            <li>
+              <a href="#footer">lãng mạn ở bể bơi</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="title"><p>Chương 89-92</p></div>
+        <div style="display: flex; flex-direction: column">
+          <img src="./images/BoardingDiary/beboi1.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi3.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi4.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi5.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi6.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi7.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi8.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi9.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi10.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi11.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi12.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi13.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi14.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi15.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi16.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi17.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi18.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi19.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi20.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi21.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi22.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi23.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi24.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi25.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi26.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi27.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi28.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi29.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi30.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi31.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi32.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi33.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi34.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi35.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi36.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi37.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi38.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi39.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi40.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi41.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi42.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi43.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi44.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi45.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi46.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi47.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi48.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi49.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi50.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi51.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi52.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi53.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi54.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi55.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi56.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi57.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi58.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi59.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi60.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi61.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi62.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi63.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi64.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi65.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi66.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi67.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi68.jpg" alt="" />
+          <img src="./images/BoardingDiary/beboi69.jpg" alt="" />
+          <div class="title">
+            <p>end</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="footer" style="margin-top: au">
+    <section class="footer" id="footer">
       <div class="share">
         <a href="#" class="btn"
           ><i class="fab fa-twitter-square"></i> twitter</a
@@ -181,9 +412,7 @@
         >
       </div>
 
-      <h1 class="credit">
-        created by <span> CTA </span> | all rights reserved!
-      </h1>
+      <h1 class="credit">&copy; | all rights reserved!</h1>
     </section>
 
     <!-- scroll top button  -->

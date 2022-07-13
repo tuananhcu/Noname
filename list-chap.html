@@ -18,7 +18,7 @@
       .boxed {
         padding: 2rem;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 1rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin-bottom: 2rem;
       }
@@ -42,6 +42,8 @@
       }
       .category {
         padding: 1.5rem 0;
+        display: flex;
+        flex-wrap: wrap;
       }
       .category a {
         border-radius: 1rem;
@@ -59,12 +61,15 @@
         padding: 1.5rem;
         border-bottom: 0.2rem solid #e6e3e3;
         display: flex;
-        justify-content: space-between;
         color: #000;
+        align-items: center;
+        gap: 3rem;
       }
-
-      .chap .link-chap .content {
-        width: 60%;
+      .chap .link-chap img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
       }
 
       .suggest p {
@@ -82,9 +87,12 @@
       <div id="menu-bar" class="fas fa-bars"></div>
       <nav class="navbar">
         <a href="index.html">trang chủ</a>
-        <a href="#popular">phổ biến</a>
-        <a href="#gallery">thư viện</a>
-        <a href="#review">đánh giá</a>
+        <a href="#">phổ biến</a>
+        <a href="#">mới cập nhật</a>
+        <a href="#">Manhwa</a>
+        <a href="#">Manga</a>
+        <a href="#">theo dõi</a>
+        <a href="#">đánh giá</a>
       </nav>
     </header>
 
@@ -107,39 +115,31 @@
         </p>
         <div class="category">
           <a href="#">School Life</a> <a href="#">Romance</a>
+          <a href="#">18+</a>
         </div>
       </div>
       <div class="boxed chap">
-        <h2>Danh sách</h2>
+        <h2>nhân vật</h2>
         <div class="link-chap">
-          <a href="#"
-            ><span class="content">lần đầu</span
-            ><span class="note">Chap 12-14</span></a
+          <a href="truyen.html"
+            ><img src="./images/BoardingDiary/IMG_20220511_223424.jpg" alt="" />
+            <span style="font-size: 2rem">Mikyng / Ajuma</span></a
           >
           <a href="#"
-            ><span class="content">quán cắt tóc</span
-            ><span class="note">Chap 17-21</span></a
+            ><img src="./images/BoardingDiary/pic9.jpg" alt="" />
+            <span style="font-size: 2rem">Hye Jeong / giáo sư</span></a
           >
           <a href="#"
-            ><span class="content">trong bếp</span
-            ><span class="note">Chap 37-39</span></a
+            ><img src="./images/BoardingDiary/pic6.jpg" alt="" />
+            <span style="font-size: 2rem">SeoHuyn / Chị</span></a
           >
           <a href="#"
-            ><span class="content">phòng khách + buộc tay</span
-            ><span class="note">Chap 43-44</span></a
+            ><img src="./images/BoardingDiary/pic8.png" alt="" />
+            <span style="font-size: 2rem">MinJi / Em</span></a
           >
           <a href="#"
-            ><span class="content">trong phòng ngủ của main</span
-            ><span class="note">Chap 69-71</span></a
-          ><a href="#"
-            ><span class="content">kem chống nắng</span
-            ><span class="note">Chap 73-74</span></a
-          ><a href="#"
-            ><span class="content">Ngoài bãi biển</span
-            ><span class="note">Chap 81-82</span></a
-          ><a href="#"
-            ><span class="content">Lãng mạn ở bể bơi</span
-            ><span class="note">Chap 89-92</span></a
+            ><img src="./images/BoardingDiary/pic5.jpg" alt="" />
+            <span style="font-size: 2rem">Subin / khóa dưới</span></a
           >
         </div>
       </div>
@@ -162,7 +162,7 @@
       </div>
 
       <h1 class="credit">
-        created by <span> CTA </span> | all rights reserved!
+        &copy; </span> | all rights reserved!
       </h1>
     </section>
 
